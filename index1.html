@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style>
+		.list{
+			 background-color: #e0e0e0;
+			 padding-top: 50px;
+			 border-radius: 10px; 
+	border: 1px solid darkred;
+	padding-bottom: 50px;
+	margin: 5px;
+			
+		}
+		.course-list{
+			display: flex;
+			gap: 20px;
+		}
+		.course-card{
+			border-radius: 10px; text-align: center; flex: 1; background: lightblue; padding: 20px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); transition: transform 0.3s; justify-content: center; margin-left: 10px; margin-right: 10px;
+		}
+		.course-card:hover{transform: translateY(-5px);}
+		h1{padding-bottom: 20px;  text-align: center;
+		}
+		.butt-on{
+			 background: #2575fc;
+			color: white; border-radius: 5px; font-weight: bold; transition: background 0.3s; padding: 10px 16px;
+			cursor: pointer;
+			margin-top: 20px;
+			align-self: flex-start;
+		}
+		.but-ton:hover{background: #1a5ed9;}
+		h4{padding-bottom: 5px;
+			height: 30px;}
+		p{padding-bottom: 10px;}
+		ul{
+	list-style: none;
+	display: flex;
+	gap: 1rem;
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: deeppink;
+	background-color: whitesmoke;
+	padding: 0.5rem 0.8rem;
+}
+a:hover{
+	color: red;
+	background-color: yellow;
+}
+nav{
+	padding-left: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 10px;
+	
+}
+.navb{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	background: blanchedalmond;
+	margin: 5px;
+	border-radius: 10px; 
+	border: 1px solid darkred;
+
+
+}
+.logo{
+	border: 1px solid red;
+	background: #2c3e50;
+	color: snow;
+	padding: 5px 5px;}
+button{
+	border-radius: 10px;
+	background: peachpuff;
+	padding: 6px 12px;
+}
+button:hover{
+	color: deeppink;
+	background-color: blanchedalmond;
+}
+.footer {
+  background: blanchedalmond;
+  color: deeppink;
+  padding: 40px 0 0;
+  font-family: Arial, sans-serif;
+  border-radius: 10px; 
+	border: 1px solid darkred;
+	margin: 5px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: deeppink;
+  background-color: whitesmoke;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 15px;
+  background-color: peachpuff;
+  margin-top: 20px;
+  font-size: 14px;
+  border-radius: 10px;
+  border-top: 1px solid black;
+}
+
+.dark-mode {
+        background-color: #121212;
+        color: #e0e0e0;
+    }
+
+    .dark-mode .navb {
+        background-color: black;
+    }
+
+    .dark-mode nav ul li a {
+        color: black;
+    }
+
+    .dark-mode #toggle {
+        background-color: #333;
+        color: #fff;
+        border: 1px solid whitesmoke;
+    }
+
+    .dark-mode .bt {
+        background-color: #444;
+        
+    }
+    .dark-mode .list {background-color: darkgray;}
+    .dark-mode .course-card{background: #181818;}
+    .dark-mode .butt-on{background: lightblue; color: black;}
+    .dark-mode .footer{
+	background-color: #121212;
+	color: wheat;
+}
+.dark-mode .footer-section ul li a{
+	color: black;
+}
+.dark-mode .footer-bottom{
+	background-color: #121212;
+	color: wheat;
+}
+.dark-mode .footer-section ul li a:hover{
+	background-color: yellow;
+	color: black;}
+	</style>
+	<div class="navb">
+		<h3 class="logo"><b>EDU<br>WAVE</b></h3>
+		<nav>
+			<ul>
+				<li><a href="eduwave2.html">HOME</a></li>
+				<li>
+					<a href="about.html">ABOUT</a>
+				</li>
+				<li>
+					<a href="index1.html">COURSES</a>
+				</li>
+				<li>
+					<a href="contact.html">CONTACT</a>
+				</li>
+			</ul>
+		</nav>
+		<button id="toggle">DARK MODE</button>
+	</div>
+	
+</head>
+
+<body><div class="list">
+	<h1>OUR POPUPLAR COURSES</h1>
+	<div class="course-list">
+		<div class="course-card">
+			<h4>ADVANCE<br> HTML</h4>
+			<p>Learn advanced HTML and grow your website for scratch</p>
+			<button class="butt-on">ENROLL NOW</button>
+		</div>
+		<div class="course-card">
+				<h4>CSS<br> MASTERY</h4>
+				<p>Style your websites beautifully using modern CSS techniques</p>
+				<button class="butt-on">ENROLL NOW</button>
+			</div>
+			<div class="course-card">
+				<h4>JAVASCIPT<br> ESSENTIALS</h4>
+				<p>Make your website interactive with essential Javascript skills.</p>
+				<button class="butt-on">ENROLL NOW</button>
+			</div>
+	</div>
+	</div>
+	
+	<script>
+		
+		const toggleButton = document.getElementById('toggle');
+
+if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark-mode');
+    if (toggleButton) toggleButton.textContent = 'LIGHT MODE';
+} else {
+    if (toggleButton) toggleButton.textContent = 'DARK MODE';
+}
+
+if (toggleButton) {
+    toggleButton.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+
+        if (document.body.classList.contains('dark-mode')) {
+            toggleButton.textContent = 'LIGHT MODE';
+            localStorage.setItem('theme', 'dark');
+        } else {
+            toggleButton.textContent = 'DARK MODE';
+            localStorage.setItem('theme', 'light');
+        }
+    });
+}
+
+
+	</script>
+	<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>My Website</h3>
+      <p>Simple and clean footer design.</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="eduwave2.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="index1.html">COURSES</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <p>Email: info@example.com</p>
+      <p>Phone: +880 1234 567890</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 My Website | All Rights Reserved</p>
+  </div>
+</footer>
+
+</body>
+</html>
