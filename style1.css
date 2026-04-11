@@ -166,3 +166,7 @@ h2{color: deepskyblue;}
 	background-color: #121212;
 	color: wheat;
 }
+@media (max-width: 768px) {
+		nav{
+			flex-direction: column;
+		}
